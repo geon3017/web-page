@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+@import url(./common.css);
+
+header{
+  position: fixed;
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  
+
+}
+header .header-wrapper{
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1800px;
+  min-width: 1400px;
+  margin: 0 auto;
+  height: 64px;
+}
+header .header-wrapper h1{
+  background: url(./web-사진/main/메인플스.png) no-repeat 0 50% / contain;
+  text-indent: -9999px;
+  width: 45px; height: 100%;
+}
+header .header-menu li{
+  margin: 0 60px;
+}
+header .header-loge .face{
+  background: url(./web-사진/logo/페이스.png) no-repeat 0 50% / contain;
+  text-indent: -9999px;
+  width: 50px; height: 100%;
+}
+header .header-loge .twie{
+  background: url(./web-사진/logo/트위터.png) no-repeat 0 50% / contain;
+  text-indent: -9999px;
+  width: 50px; height: 100%;
+}
+header .header-loge .youtube{
+  background: url(./web-사진/logo/유튜.png) no-repeat 0 50% / contain;
+  text-indent: -9999px;
+  width: 50px; height: 100%;
+}
