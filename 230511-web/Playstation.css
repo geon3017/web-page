@@ -2,32 +2,42 @@
 
 @import url(./common.css);
 
+@import url(./variable.css);
+@import url(./Playstation-font.css);
 
+/* header */
+body{
+  font-family: var( --main-font);
+}
 header .header-wrapper {
-  background-color: black;
-  color: #fff;
+  min-width: 1400px;
+  background-color: #fff;
+  color: #000;
   width: 100%;
   box-sizing: border-box;
   position: fixed;
-  top: 0; left: 5.5%;
+  top: 0; left: 10px;
   justify-content: space-between;
   align-items: center;
-  max-width: 1800px;
-  min-width: 1400px;
-  margin: 0 auto;
   height: 64px;
+  z-index: 999;
 
 }
 header .header-wrapper h1{
   background: url(./web-사진/main/메인플스.png) no-repeat 0 50% / contain;
   text-indent: -9999px;
   width: 45px; height: 100%;
+  margin: 0 100px;
 }
 header .header-menu li{
   margin: 0 60px;
 }
 header .header-menu li:hover{
   color: #0070cc;
+}
+header .header-loge{
+  cursor: pointer;
+  margin-right: 60px;
 }
 header .header-loge .face{
   background: url(./web-사진/logo/페이스.png) no-repeat 0 50% / contain;
@@ -44,27 +54,234 @@ header .header-loge .youtube{
   text-indent: -9999px;
   width: 50px; height: 100%;
 }
-.Hogwarts{
-  background: url(./web-사진/main/호그와트레거시.png) no-repeat 50% /contain;
+.Hogwarts {
+  background: url(./web-사진/main/호그와트레거시.png) no-repeat 50% / contain;
   width: 100%; height: 702px ;
-  text-indent: -9999px;
+  position: relative;
+  top: 50px;
 }
-.PlayStation-new{
-  background-color: #333;
+.Hogwarts h1{
+  text-indent: -9999px;
+
+}
+.Hogwarts .Hogwarts-name{
+  /* background: url(./web-사진/main/hero-logo-ko\ 1.png) no-repeat 50% / contain; */
+  /* width: 630px; height: 230px; */
+  position: absolute;
+  top: 90px; left: 150px;
+}
+.Hogwarts .Hogwarts-name .Hogwarts-text{
+  padding-top: 50px;
+  margin: 30px 50px;
+  color: #fff;
+}
+.Hogwarts .Hogwarts-name .Hogwarts-text h3{
+  font-size: var(--font-size-35);
+}
+.Hogwarts .Hogwarts-name .Hogwarts-text p{
+  padding: 30px 0;
+  font-size: var(--font-size-22);
+}
+.Hogwarts-text .btn{
+  font-size: var(--font-size-16);
+  font-weight: 700;
+  width: 115px; 
   text-align: center;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #000;
+  transition: 0.5s;
+}
+.Hogwarts-text .btn:hover{
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+}
+/* section1 */
+.PlayStation-new{
+  /* background-color: #333; */
+  text-align: center;
+  margin-top: 189px;
 
 }
 .PlayStation-new h3{
-  font-size: var(--font-size-18);
-  color: orange;
+  font-size: var(--font-size-22);
+  color: #FF7F52;
+}
+.PlayStation-new h1{
+  font-size: var(--font-size-35);
+  font-family: 'Nanum Gothic';
 }
 .PlayStation-new .play-news{
   min-width: 1400px;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 100px;
+  position: relative;
 }
 .PlayStation-new .play-news li{
   padding: 0 20px;
-  width: 150px; height: 50px;
+  width: 315px; height: 181px;
+  
+}
+.PlayStation-new .play-news li span{
+  float: left;
+  padding: 5px 20px;
+  text-indent: -9999px;
+  line-height: 1.6;
+}
+.PlayStation-new .play-news li .objects::after{
+  content: "";
+  width: 3px; height: 15%;
+  background-color: #FF7F52;
+  position: absolute;
+  top: 0; left: 29%;
+}
+.PlayStation-new .play-news li .lang::after{
+  content: "";
+  width: 3px; height: 15%;
+  background-color: #FF7F52;
+  position: absolute;
+  top: 0; left: 46%;
+}
+.PlayStation-new .play-news li .paint::after{
+  content: "";
+  width: 3px; height: 15%;
+  background-color: #FF7F52;
+  position: absolute;
+  top: 0; left: 62.8%;
+}
+.PlayStation-new .play-news li .objects{
+  background: url(./web-사진/icon/emoji_objects.svg) no-repeat 100% /contain;
+}
+.PlayStation-new .play-news li .lang{
+  background: url(./web-사진/icon/language.svg) no-repeat 100% / contain;
+
+}
+.PlayStation-new .play-news li .paint{
+  background: url(./web-사진/icon/format_paint.svg) no-repeat 100% / contain;
+
+}
+.PlayStation-new .play-news li h3{
+  font-size: var(--font-size-22);
+  font-family: var( --main-font);
+  font-weight: 800;
+}
+.PlayStation-new .play-news li p{
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: left;
+  font-size: var(--font-size-18);
+}
+.background{
+  background: url(./web-사진/상품/플스배경.jpg) no-repeat 50% / cover;
+  height: 572px ;
+  position: relative;
+}
+.background .back{
+  width: 1006px;
+  height: 360px;
+  color: #fff;
+  position: absolute;
+  right: 3vw;
+  top: 20%;
+}
+.back .text {
+  padding: 50px;
+  font-size: var(--font-size-22);
+  font-family: var( --main-font);
+  font-weight: 700;
+  line-height: 1.4;
+}
+.back .text h3{
+  font-weight: 700;
+}
+.back .text p{
+  margin-top: 30px;
+}
+.back .funny{
+  width: 300px;
+}
+.back .play-img{
+  background: url(./web-사진/상품/playstation5.png) no-repeat 40%  / cover;
+  width: 300px;
+  text-indent: -99999px;
+  margin-right: 29px;
+}
+.back .funny-1{
+  background-color: #FF7F52;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.back .funny-1 .more-btn{
+  background-color: #222;
+  border: 2px solid #fff;
+  padding: 5px 30px;
+  text-align: center;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin: 30px 50px ;
+}
+.back .funny-1 .more-btn:hover{
+  border-radius: 30px;
+  background-color: #fff;
+  color: #222;
+}
+/* section2 */
+.emoji{
+  margin-top: 200px;
+}
+.emoji ul{
+  justify-content: center;
+  align-items: center;
+}
+.emoji .Heart li{
+  font-family: var(--main-font);
+  font-size: var(--font-size-18);
+  color: #FF7F52;
+  background-color: rgba(245, 241, 241, 0.5);
+  width: 249px; height: 186px;
+  margin: 0 100px;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+.emoji .Heart li .good{
+  background: url(./web-사진/icon/photo_heart\ .svg) no-repeat 50% /contain;
+  width: 50px; height: 50px;
+  margin: 40px auto;
+  text-indent: -9999px;
+
+}
+.emoji .Heart li .laptop{
+  background: url(./web-사진/icon/photo_laptop\ .svg) no-repeat 50% /contain;
+  width: 50px; height: 50px;
+  margin: 40px auto;
+  text-indent: -9999px;
+
+}
+.emoji .Heart li .camera{
+  background: url(./web-사진/icon/photo_camera\ .svg) no-repeat 50% /contain;
+  width: 50px; height: 50px;
+  margin: 40px auto;
+  text-indent: -9999px;
+
+}
+.emoji .Heart li .massge{
+  background: url(./web-사진/icon/forum.svg) no-repeat 50% /contain;
+  width: 50px; height: 50px;
+  margin: 40px auto;
+  text-indent: -9999px;
+
+}
+.emoji .Heart li p{
+  margin: 30px 0;
+}
+.Play-add{
+  background: url(./web-사진/소식/산배경.png) no-repeat 50% / cover;
+  height: 600px;
+  margin-top: 179px;
 }
