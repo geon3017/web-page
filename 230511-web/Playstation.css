@@ -16,7 +16,7 @@ header .header-wrapper {
   width: 100%;
   box-sizing: border-box;
   position: fixed;
-  top: 0; left: 10px;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   height: 64px;
@@ -55,8 +55,8 @@ header .header-loge .youtube{
   width: 50px; height: 100%;
 }
 .Hogwarts {
-  background: url(./web-사진/main/호그와트레거시.png) no-repeat 50% / contain;
-  width: 100%; height: 702px ;
+  background: url(./web-사진/main/호그와트레거시.png) no-repeat 50% / cover;
+  width: 100%; height: 1000px ;
   position: relative;
   top: 50px;
 }
@@ -68,7 +68,7 @@ header .header-loge .youtube{
   /* background: url(./web-사진/main/hero-logo-ko\ 1.png) no-repeat 50% / contain; */
   /* width: 630px; height: 230px; */
   position: absolute;
-  top: 90px; left: 150px;
+  top: 220px; left: 200px;
 }
 .Hogwarts .Hogwarts-name .Hogwarts-text{
   padding-top: 50px;
@@ -137,21 +137,24 @@ header .header-loge .youtube{
   width: 3px; height: 15%;
   background-color: #FF7F52;
   position: absolute;
-  top: 0; left: 29%;
+  top: 0; left: 34%;
 }
 .PlayStation-new .play-news li .lang::after{
   content: "";
   width: 3px; height: 15%;
   background-color: #FF7F52;
   position: absolute;
-  top: 0; left: 46%;
+  top: 0; left: 47%;
+}
+.PlayStation-new .Paint-big h3{
+  margin-left: 70px;
 }
 .PlayStation-new .play-news li .paint::after{
   content: "";
   width: 3px; height: 15%;
   background-color: #FF7F52;
   position: absolute;
-  top: 0; left: 62.8%;
+  top: 0; left: 60%;
 }
 .PlayStation-new .play-news li .objects{
   background: url(./web-사진/icon/emoji_objects.svg) no-repeat 100% /contain;
@@ -279,9 +282,194 @@ header .header-loge .youtube{
 }
 .emoji .Heart li p{
   margin: 30px 0;
+  font-size: var(--font-size-22);
+  font-weight: 800;
 }
+
+/* add */
+
 .Play-add{
   background: url(./web-사진/소식/산배경.png) no-repeat 50% / cover;
   height: 600px;
   margin-top: 179px;
+  position: relative;
+}
+.Play-add::after{
+  content: "";
+  position: absolute;
+  background-color: #ddd;
+  top: 477px;
+  width: 100%;
+  height: 100%;
+  z-index: -9999;
+}
+.Play-add .start{
+  text-align: center;
+  font-size: var(--font-size-43);
+  padding-top: 40px;
+  color: #fff;
+}
+.Play-add .start p{
+  background: url(./web-사진/icon/play_circle.svg) no-repeat 50% / contain;
+  text-indent: -9999px;
+  margin-bottom: 20px;
+}
+.Play-add ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 79px;
+}
+.Play-add ul li div{
+ display: flex;
+ margin-top: 67px;
+ justify-content: center;
+ align-items: center;
+}
+.Play-add ul li div span{
+  text-indent: -9999px;
+  padding: 20px;
+  margin-right: 15px;
+}
+.Play-add ul li div p{
+  font-size: var(--font-size-22);
+  font-weight: 700;
+}
+.Play-add ul li div .heart{
+  background: url(./web-사진/icon/photo_heart\ .svg) no-repeat 50% / contain;
+}
+.Play-add ul li div .heart-1{
+  width: 15.5vw;
+}
+.Play-add ul li div .data{
+  background: url(./web-사진/icon/database.svg) no-repeat 50% / contain;
+}
+.Play-add ul li div .big{
+  background: url(./web-사진/icon/newspaper.svg) no-repeat 50% / contain;
+}
+.Play-add img{
+  margin-top: 20px;
+  width: 95%;
+}
+
+/* Play-funny */
+.Play-funny{
+  margin-top: 540px;
+}
+.Play-funny .play-games ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Play-funny .play-games ul li{
+  margin: 0 150px;
+  font-size: var(--font-size-22);
+  font-weight: 700;
+}
+.Play-funny .play-games ul li:hover{
+  color: #0070cc;
+}
+.Game{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1561px; height: 726px;
+  margin: 60px 590px;
+  gap: 33px 17px;
+}
+.Game .fun{
+  border: 1px solid #000;
+  width: 262px; height: 353px;
+  text-indent: -9999px;
+}
+.game1{
+  background: url(./web-사진/게임/호그와트.png) no-repeat 50% / cover;
+}
+.game2{
+  background: url(./web-사진/게임/라오어.jpg) no-repeat 50% / cover;
+  
+}
+.game3{
+  background: url(./web-사진/게임/갓오브워.png) no-repeat 50% / cover;
+}
+.Game .game4{
+  width: 300px;
+}
+.game4{
+  background: url(./web-사진/게임/콜업.jpg) no-repeat 50% / cover;
+}
+.game5{
+  background: url(./web-사진/게임/데드스페이스.png) no-repeat 50% / cover;
+}
+.game6{
+  background: url(./web-사진/게임/호라이즌.jpg) no-repeat 50% / cover;
+}
+.game7{
+  background: url(./web-사진/게임/포라이즌5.png) no-repeat 50% / cover;
+}
+.game8{
+  background: url(./web-사진/게임/스파이더맨.jpg) no-repeat 50% / cover;
+}
+.Game .game9{
+  width: 300px;
+}
+.game9{
+  background: url(./web-사진/게임/엘든링.jpg) no-repeat 50% / cover;
+}
+.game10{
+  background: url(./web-사진/게임/몬헌.jpg) no-repeat 50% / cover;
+}
+
+/* Components */
+.Components h2{
+  font-size: var(--font-size-43);
+  font-weight:800;
+  margin-top: 10vw;
+  text-align: center;
+}
+.Components .Components-part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9vw;
+}
+.Components .Components-part .part{
+  height: 205px; 
+  text-indent: -9999px;
+}
+.Components .Components-part li{
+  margin: 0 100px;
+}
+.Components .Components-part .text-play{
+  text-align: center;
+  margin-top: 45px;
+}
+.Components .Components-part .text-play p{
+  margin-bottom: 50px;
+  font-size: var(--font-size-35);
+}
+.Components .Components-part .text-play .more-btn{
+  background-color: #000;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 50px;
+  font-size: var(--font-size-22);
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.Components .Components-part .text-play .more-btn:hover{
+  background-color: #0070cc;
+}
+.Components .Components-part .playstation-1{
+  background: url(./web-사진/상품/플스5.png) no-repeat 50% /cover;
+}
+.Components .Components-part .playstation-2{
+  background: url(./web-사진/상품/패드2.png) no-repeat 50% /contain;
+}
+.Components .Components-part .playstation-3{
+  background: url(./web-사진/상품/해드셋.png) no-repeat 50% /contain;
+}
+.Components .Components-part .playstation-4{
+  background: url(./web-사진/상품/캠코더.png) no-repeat 50% /contain;
 }
