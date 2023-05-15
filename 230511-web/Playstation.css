@@ -376,7 +376,7 @@ header .header-loge .youtube{
   flex-direction: row;
   flex-wrap: wrap;
   width: 1561px; height: 726px;
-  margin: 60px 250px;
+  margin: 60px auto;
   gap: 33px 17px;
 }
 .Game .fun{
@@ -739,7 +739,7 @@ header .header-loge .youtube{
 .footer-last{
   background-color: #000;
   color: #fff;
-  height: 440px;
+  height: 480px;
 }
 .footer-last ul{
   display: flex;
@@ -751,9 +751,24 @@ header .header-loge .youtube{
 }
 .footer-last ul li{
   margin: 55px 50px;
-  line-height: 1.5;
+  line-height: 1.6;
+  position: relative;
 }
-.footer-last .last-1 .import{
+.footer-last ul li::after{
+  content: "";
+  width: 3px; height: 300px;
+  position: absolute;
+  top: -20px; left: 200px;
+  background-color: #ffffff5b;
+}
+.footer-last ul li:nth-child(2):after{
+  content: none;
+}
+.footer-last ul li:nth-child(6):after{
+  content: none;
+}
+
+.footer-last .import{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -761,6 +776,9 @@ header .header-loge .youtube{
   bottom: 20px;
   color: #0070cc;
 }
-.footer-last .last-1 .import-1{
+.footer-last .import li{
+  margin: 0 10px;
+}
+.footer-last .import .import-1{
   margin-right: 700px;
 } 
