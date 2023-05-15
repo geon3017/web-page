@@ -21,6 +21,8 @@ header .header-wrapper {
   align-items: center;
   height: 64px;
   z-index: 999;
+  font-size: var(--font-size-18);
+  font-weight: 700;
 
 }
 header .header-wrapper h1{
@@ -40,7 +42,7 @@ header .header-loge{
   margin-right: 60px;
 }
 header .header-loge .face{
-  background: url(./web-사진/logo/페이스.png) no-repeat 0 50% / contain;
+  background: url(./web-사진/logo/facebook.png) no-repeat 0 50% / contain;
   text-indent: -9999px;
   width: 50px; height: 100%;
 }
@@ -50,7 +52,7 @@ header .header-loge .twie{
   width: 50px; height: 100%;
 }
 header .header-loge .youtube{
-  background: url(./web-사진/logo/유튜.png) no-repeat 0 50% / contain;
+  background: url(./web-사진/logo/youtube.png) no-repeat 0 50% / contain;
   text-indent: -9999px;
   width: 50px; height: 100%;
 }
@@ -362,7 +364,7 @@ header .header-loge .youtube{
   align-items: center;
 }
 .Play-funny .play-games ul li{
-  margin: 0 150px;
+  padding: 0 130px;
   font-size: var(--font-size-22);
   font-weight: 700;
 }
@@ -374,11 +376,11 @@ header .header-loge .youtube{
   flex-direction: row;
   flex-wrap: wrap;
   width: 1561px; height: 726px;
-  margin: 60px 590px;
+  margin: 60px 250px;
   gap: 33px 17px;
 }
 .Game .fun{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   width: 262px; height: 353px;
   text-indent: -9999px;
 }
@@ -438,7 +440,7 @@ header .header-loge .youtube{
   text-indent: -9999px;
 }
 .Components .Components-part li{
-  margin: 0 100px;
+  margin: 0 80px;
 }
 .Components .Components-part .text-play{
   text-align: center;
@@ -446,7 +448,8 @@ header .header-loge .youtube{
 }
 .Components .Components-part .text-play p{
   margin-bottom: 50px;
-  font-size: var(--font-size-35);
+  font-size: var(--font-size-22);
+  font-weight: 700;
 }
 .Components .Components-part .text-play .more-btn{
   background-color: #000;
@@ -473,3 +476,291 @@ header .header-loge .youtube{
 .Components .Components-part .playstation-4{
   background: url(./web-사진/상품/캠코더.png) no-repeat 50% /contain;
 }
+
+/* vr-part */
+.vr-part{
+  margin-top: 145px;
+  position: relative;
+}
+.vr-part .back-text{
+  background: url(./web-사진/상품/vt-기기2.png) no-repeat 50% / cover;
+  height: 689px;
+  position: relative;
+}
+.vr-part::after{
+  content: "";
+  position: absolute;
+  top: 655px;
+  width: 100%;
+  background-color: #ddd;
+  height: 665px;
+  z-index: -9999;
+}
+.vr-part .vr-real{
+  top: 0; left: 125px;
+  position: absolute;
+  color: #fff;
+}
+.vr-part .vr-real h1{
+  font-size: var(--font-size-43);
+  font-weight: 700;
+  margin-top: 77px;
+}
+.vr-part .vr-real .vr-text{
+  margin-top: 40px;
+}
+.vr-part .vr-real .vr-text p{
+  width: 500px;
+  font-size: var(--font-size-22);
+  line-height: 1.6;
+  margin-bottom: 55px;
+}
+.vr-part .vr-real .vr-text a{
+  padding: 5px 35px;
+  border: 5px solid #fff;
+  border-radius: 30px;
+  background-color: #000;
+  color: #fff;
+  font-size: var(--font-size-22);
+  font-weight: 400;
+  transition: 0.5s;
+}
+.vr-part .vr-real .vr-text a:hover{
+  background-color: #0070cc;
+}
+.vr-part .back-text h2{
+  text-indent: -9999px;
+}
+/* game-news*/
+.vr-news{
+  margin-top: 113px;
+}
+.vr-news .Final{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vr-news .Final span{
+  background: url(./web-사진/소식/그란투리모스.png) no-repeat 50% /contain;
+  width: 585px; height: 395px;
+  margin-right: 100px;
+  text-indent: -9999px;
+}
+.vr-news .Final .Final-news{
+  width: 420px;
+}
+.vr-news .Final .Final-news h2{
+  font-size: var(--font-size-35);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.vr-news .Final .Final-news .final-text{
+  padding-bottom: 30px;
+}
+.vr-news .Final .Final-news p{
+  font-size: var(--font-size-18);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.vr-news .Final .Final-news .green-to{
+  width: 555px;
+  line-height: 1.5;
+}
+.vr-news .Final .green-to-news{
+  display: flex;
+  margin-top: 20px;
+}
+.vr-news .Final .green-to-news .text-1{
+  background: url(./web-사진/소식/DefaultAvatar.png) no-repeat 50% / cover;
+  width: 70px; height: 70px;
+  text-indent: -9999px;
+}
+.vr-news .Final .green-to-news div p{
+  font-size: var(--font-size-12);
+}
+.vr-news .Final .green-to-news div p:first-child{
+  margin-top: 7px;
+}
+.big-loge{
+  margin-top: 268px;
+}
+.big-loge ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-indent: -9999px;
+}
+.big-loge .sony{
+  background: url(./web-사진/logo/소니.png) no-repeat 50% /cover;
+  width: 230px; height: 80px;
+}
+.big-loge .google{
+  background: url(./web-사진/logo/구글.png) no-repeat 50% /cover;
+  width: 230px; height: 80px;
+}
+.big-loge .sega{
+  background: url(./web-사진/logo/세가.png) no-repeat 50% /cover;
+  width: 230px; height: 80px;
+}
+.big-loge .marvel{
+  background: url(./web-사진/logo/마블.png) no-repeat 50% /cover;
+  width: 230px; height: 80px;
+}
+/* Play-shoping */
+.Play-shoping{
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 145px;
+  height: 453px;
+}
+.Play-shoping .more-part{
+  /* width: 370px; height: 122px; */
+  margin-left: 100px;
+}
+.Play-shoping .more-part h3{
+  font-size: var(--font-size-35);
+  font-weight: 700;
+}
+.Play-shoping .more-part p{
+  font-size: var(--font-size-18);
+  margin-top: 10px;
+  width: 290px;
+  line-height: 1.5;
+}
+.Play-shoping .Play-shop ul{
+  display: flex;
+}
+.Play-shoping .Play-shop li{
+  margin: 0 35px;
+  padding: 120px;
+  text-indent: -9999px;
+  position: relative;
+}
+.Play-shoping .Play-shop li::after{
+  content: "";
+  width: 3px; height: 300px;
+  position: absolute;
+  top: -20px; left: 270px;
+  background-color: #ffffff5b;
+}
+.Play-shoping .Play-shop li:last-child::after{
+  content: none;
+  
+}
+.Play-shoping .Play-shop .all-game{
+  background: url(./web-사진/다른상품/모든게임.png) no-repeat 50% /cover;
+}
+.Play-shoping .Play-shop .free{
+  background: url(./web-사진/다른상품/free.png) no-repeat 50% /cover;
+}
+.Play-shoping .Play-shop .PS-PLUS{
+  background: url(./web-사진/다른상품/PSPLUS.png) no-repeat 50% /cover;
+}
+.Play-shoping .Play-shop .PS-VR2{
+  background: url(./web-사진/다른상품/vr.png) no-repeat 50% /cover;
+}
+.sns{
+  margin-top: 90px;
+}
+.sns ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sns ul li{
+  margin: 0 120px;
+}
+.sns ul li p{
+  padding: 55.5px;
+  text-indent: -9999px;
+}
+.sns ul li .kakao{
+  background: url(./web-사진/logo/트위터.png) no-repeat 50% /contain;
+}
+.sns ul li .face-1{
+  background: url(./web-사진/logo/facebook.png) no-repeat 50% /contain;
+}
+.sns ul li .inster{
+  background: url(./web-사진/logo/instagram.png) no-repeat 50% /contain;
+}
+.sns ul li .youtube-1{
+  background: url(./web-사진/logo/youtube.png) no-repeat 50% /contain;
+}
+.playstation4{
+  margin-top: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playstation4 .text-playstation{
+  /* width: 600px; height: 362px; */
+  text-align: center;
+  line-height: 1.2;
+}
+.playstation4 .text-playstation h3{
+  font-size: var(--font-size-43);
+  font-weight: 700;
+}
+.playstation4 .text-playstation p{
+  font-size: var(--font-size-18);
+}
+.playstation4 .text-playstation h2{
+  margin: 50px 0 30px 0;
+  font-size: var(--font-size-35);
+  font-weight: 700;
+}
+.playstation4 .text-playstation a{
+  color: #fff;
+  background-color: #000;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: var(--font-size-16);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.playstation4 .text-playstation a:hover{
+  background-color: #0070cc;
+}
+.playstation4 .palysta4{
+  background: url(./web-사진/상품/ps4.png) no-repeat 50% / contain;
+  width: 600px; height: 600px;
+  text-indent: -9999px;
+}
+.playstation4 .palysta4-1{
+  background: url(./web-사진/상품/duals.png) no-repeat 50% / contain;
+  width: 600px; height: 600px;
+  text-indent: -9999px;
+}
+
+/* footer-last */
+.footer-last{
+  background-color: #000;
+  color: #fff;
+  height: 440px;
+}
+.footer-last ul{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+.footer-last ul h4{
+  margin-bottom: 20px;
+}
+.footer-last ul li{
+  margin: 55px 50px;
+  line-height: 1.5;
+}
+.footer-last .last-1 .import{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
+  color: #0070cc;
+}
+.footer-last .last-1 .import-1{
+  margin-right: 700px;
+} 
